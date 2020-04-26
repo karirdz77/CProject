@@ -1,13 +1,30 @@
 /* 
-NAME: Ashley Leija Francisco sanchez Karina Rodriguez
+ 
+
+NAME: Ashley Leija Francisco sasnchez.
+
 DATE: 4/16/2020 
+
 CLASS:COSC-1336 Programming Fundamentals I 
+
 TITLE: 
+
 DESCRIPTION: 
+
+ 
+
 */ 
+
+ 
+
 #include <iostream> 
+
 #include <string> 
+
 using namespace std; 
+
+ 
+
 int main() // begoining of the code 
 
 { 
@@ -37,6 +54,7 @@ int main() // begoining of the code
         cin >> choice; // Stores the inputed value. 
 
  
+// ROMAN NUMERAL SECTION: 
 
         if ((choice == 'A') || (choice == 'a')) // if statmetnt that displays the given output if A or a is imputed 
 
@@ -48,11 +66,7 @@ int main() // begoining of the code
 
   
 
-int decimal; 
-
-  
-
-  
+int decimal;  // for the user to enter a decimal between 1 and 50
 
 string romanNum[51]={"N/A","I","II","III","IV","V","VI","VII","VIII","IX","X", 
 
@@ -60,25 +74,23 @@ string romanNum[51]={"N/A","I","II","III","IV","V","VI","VII","VIII","IX","X",
 
 "XXX","XXXI","XXXII","XXXIII","XXXIV","XXXV","XXXVI","XXXVII","XXXVIII","XXXIX","XL","XLI","XLII","XLIII","XLIV","XLV","XLVI","XLVII","XLVIII","XLIX","L"}; 
 
-  
 
-  
+cout<<"Input a decimal number: "; // asks user to enter a decimal to convert
 
-cout<<"Input a decimal number: "; 
+cin>>decimal; //user enters whatever number they want to convert
 
-cin>>decimal; 
 
-while(decimal>50||decimal<0) 
+while(decimal>50||decimal<0) //whenever the user types in a number out of the range the following message will be displayed
 
 { 
 
-cout<<"\nWrong input.Try again"; 
+cout<<"\nWrong input.Try again"; //error message for when user types in a number out of the range
 
 } 
 
   
 
-cout<<"Roman number is : "<<romanNum[decimal]<<"\n"; 
+cout<<"Roman number is : "<<romanNum[decimal]<<"\n"; //outputs the corresponding roman numeral 
 
   
 
