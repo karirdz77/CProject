@@ -1,71 +1,33 @@
 /* 
  
 
-NAME: Ashley Leija Francisco sasnchez.
-
+NAME: Ashley Leija Francisco sasnchez Karina Rodriguez.
 DATE: 4/16/2020 
-
 CLASS:COSC-1336 Programming Fundamentals I 
-
 TITLE: 
-
 DESCRIPTION: 
-
- 
-
-*/ 
-
- 
-
+*/  
 #include <iostream> 
-
 #include <string> 
-
 using namespace std; 
-
- 
-
 int main() // begoining of the code 
-
 { 
-
-    char choice; // declares the varriable choice 
-
+    char choice; // declares the varriable choice 
     char value; // declares the varriable value 
-
     char decision; // declares the varriable choice 
-
- 
-
     do { 
-
         cout << "\n-----------------------------------------\n" 
-
             << "-----Welcome to Number converter V1!-----\n" 
-
             << "-----------------------------------------\n\n" 
-
             << "A. Convert Decimal to Roman Numeral\n\n" << "B. Convert Decimal to Binary\n\n" 
-
             << "C. Convert Decimal to Hexadecimal\n\n" << "D. Quit\n\n\n"; //String of outputs that displays all that once. 
-
         cout << "Enter Your Choice: "; // Asks the user for an imput 
-
         cin >> choice; // Stores the inputed value. 
-
- 
 // ROMAN NUMERAL SECTION: 
-
         if ((choice == 'A') || (choice == 'a')) // if statmetnt that displays the given output if A or a is imputed 
-
         { 
-
             cout << "You have chosen to Convert Decimal to Roman Numeral\n"; // Displays the given output 
-
            { 
-
-  
-
 int decimal;  // for the user to enter a decimal between 1 and 50
 
 string romanNum[51]={"N/A","I","II","III","IV","V","VI","VII","VIII","IX","X", 
@@ -79,9 +41,7 @@ cout<<"Input a decimal number: "; // asks user to enter a decimal to convert
 
 cin>>decimal; //user enters whatever number they want to convert
 
-
 while(decimal>50||decimal<0) //whenever the user types in a number out of the range the following message will be displayed
-
 { 
 
 cout<<"\nWrong input.Try again"; //error message for when user types in a number out of the range
