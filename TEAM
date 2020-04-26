@@ -1,0 +1,240 @@
+/* 
+ 
+
+NAME: 
+
+DATE: 4/16/2020 
+
+CLASS:COSC-1336 Programming Fundamentals I 
+
+TITLE: 
+
+DESCRIPTION: 
+
+ 
+
+*/ 
+
+ 
+
+#include <iostream> 
+
+#include <string> 
+
+using namespace std; 
+
+ 
+
+int main() // begoining of the code 
+
+{ 
+
+    char choice; // declares the varriable choice 
+
+    char value; // declares the varriable value 
+
+    char decision; // declares the varriable choice 
+
+ 
+
+    do { 
+
+        cout << "\n-----------------------------------------\n" 
+
+            << "-----Welcome to Number converter V1!-----\n" 
+
+            << "-----------------------------------------\n\n" 
+
+            << "A. Convert Decimal to Roman Numeral\n\n" << "B. Convert Decimal to Binary\n\n" 
+
+            << "C. Convert Decimal to Hexadecimal\n\n" << "D. Quit\n\n\n"; //String of outputs that displays all that once. 
+
+        cout << "Enter Your Choice: "; // Asks the user for an imput 
+
+        cin >> choice; // Stores the inputed value. 
+
+ 
+
+        if ((choice == 'A') || (choice == 'a')) // if statmetnt that displays the given output if A or a is imputed 
+
+        { 
+
+            cout << "You have chosen to Convert Decimal to Roman Numeral\n"; // Displays the given output 
+
+           { 
+
+  
+
+int decimal; 
+
+  
+
+  
+
+string romanNum[51]={"N/A","I","II","III","IV","V","VI","VII","VIII","IX","X", 
+
+"XI","XII","XIII","XIV","XV","XVI","XVII","XVIII","XIX","XX","XXI","XXII","XXIII","XXIV","XXV","XXVI","XXVII","XXVIII","XXIX", 
+
+"XXX","XXXI","XXXII","XXXIII","XXXIV","XXXV","XXXVI","XXXVII","XXXVIII","XXXIX","XL","XLI","XLII","XLIII","XLIV","XLV","XLVI","XLVII","XLVIII","XLIX","L"}; 
+
+  
+
+  
+
+cout<<"Input a decimal number: "; 
+
+cin>>decimal; 
+
+while(decimal>50||decimal<0) 
+
+{ 
+
+cout<<"\nWrong input.Try again"; 
+
+} 
+
+  
+
+cout<<"Roman number is : "<<romanNum[decimal]<<"\n"; 
+
+  
+
+return 0; 
+
+} 
+
+        } 
+
+        else if ((choice == 'B') || (choice == 'b')) // if statmetnt that displays the given output if B or b is imputed 
+
+        { 
+
+            cout << "You have chosen to Convert Decimal to Binary\n"; // Displays the given output 
+
+            cout << "\nPlease enter a Decimal Value within the range of 1 to 50.\n"; // Displays the given output 
+
+int a[10], n, i;     
+
+cout<<"Enter the number to convert: ";     
+
+cin>>n;     
+
+if (n >= 0 && n <= 50 ){ 
+
+for(i=0; n>0; i++)     
+
+{     
+
+a[i]=n%2;     
+
+n= n/2;   
+
+}     
+
+cout<<"Binary of the given number= ";     
+
+for(i=i-1 ;i>=0 ;i--)     
+
+{     
+
+cout<<a[i];     
+
+}     
+
+} 
+
+else if (n < 0 || n > 50){ 
+
+  cout << "Number not valid"; 
+
+} 
+
+            } 
+
+        } 
+
+        else if ((choice == 'C') || (choice == 'c')) // if statmetnt that displays the given output if C or c is imputed 
+
+        { 
+
+            cout << "You have chosen to Convert Decimal to Hexadecimal\n"; // Displays the given output 
+
+            cout << "\nPlease enter a Decimal Value within the range of 1 to 50.\n"; 
+
+int main() 
+
+{int decimal; 
+
+string hexadecimal[51]={"0","1","2","3","4","5","6","7","8","9","A", 
+
+"B","C","D","E","F","10","11","12","13","14","15","16","17","18", 
+
+"19","1A","1B","1C","1D","1E","1F","20","21","22","23","24","25","26","27","28","29", 
+
+"2A","2B","2C","2D","2E","2F","30","31","32"}; 
+
+cout<<"Input a decimal number: "; 
+
+cin>>decimal; 
+
+while(decimal>50||decimal<0) 
+
+{ 
+
+cout<<"\nWrong input.Try again"; 
+
+cout<<"\nInput a decimal number: "; 
+cin>>decimal; 
+
+} 
+
+cout<<"Hexadecimal number is : "<<hexadecimal[decimal]<<"\n"; 
+
+return 0; 
+
+} 
+
+        } 
+
+        else if ((choice == 'D') || (choice == 'd')) // if statmentt that displays the given output if D or d imputed 
+
+        { 
+
+            cout << "Thank you for using this Converter. Goodbye"; // Displays the given output 
+
+            return 0; // Ends the code 
+
+        } 
+
+        else 
+
+        { 
+
+            cout << "Choice does not exsist please enter a different choice.\n\n"; 
+
+        } 
+
+ 
+
+        cout << "\nPlease enter a Decimal Value within the range of 1 to 50.\n"; // Displays the given output 
+
+        cin >> value; 
+
+ 
+
+        // rest of code continues here 
+
+ 
+
+ 
+
+        cout << "Would You like to make another Conversion?"; 
+
+        cin >> decision; 
+
+    } while (((choice != 'D') || (choice != 'd')) & ((decision == 'Y') || (decision == 'y'))); 
+
+    
+
+} 
+                
