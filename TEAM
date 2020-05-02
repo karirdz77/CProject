@@ -1,11 +1,14 @@
 /* 
  
-
-NAME: Ashley Leija Francisco sasnchez Karina Rodriguez.
-DATE: 4/16/2020 
+NAME: Ashley Leija Francisco Sanchez, Karina Rodriguez, Alejandro Alvear.
+DATE: 5/1/2020 
 CLASS:COSC-1336 Programming Fundamentals I 
-TITLE: 
-DESCRIPTION: 
+TITLE: Number Converter
+DESCRIPTION:
+This program will display a menu to user that will give them the option to choose between 3 types of conversions
+(decimal to roman numeral, decimal to binary, and decimal to hexadecimal) or quitting the program. After a conversion is made, 
+the user can also choose to go back to the menu and make another conversion. 
+
 */  
 #include <iostream> 
 #include <string> 
